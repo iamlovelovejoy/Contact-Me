@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* makes the image's width exactly match the screen width. */
+    height: 100vh; /* makes the image's height exactly match the screen height. */
+    object-fit: cover; /* ensures that the image covers the entire area without stretching, maintaining its aspect ratio. */
+    z-index: -1; /* Make sure the image is behind the form */
+}
+
+.parent {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+}
+
+.child {
+    flex-direction: column;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    border: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+#sibling1, #sibling2, #sibling3 {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+}
+
+#submitbtn {
+    text-align: center;
+}
+
+#sibling4 {
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#sibling4:hover {
+    background-color: pink;
+    }
